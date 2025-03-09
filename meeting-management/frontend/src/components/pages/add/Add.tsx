@@ -75,7 +75,7 @@ export default function Add(): JSX.Element {
                         message: 'room is a must'
                     }
                 })} />
-                <span className='error'>{formState.errors.teamId?.message}</span>
+                <span className='error'>{formState.errors.room?.message}</span>
 
                 <input placeholder='description' {...register('description', {
                     required: {
