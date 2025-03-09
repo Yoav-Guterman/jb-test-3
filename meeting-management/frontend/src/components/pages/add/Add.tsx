@@ -64,7 +64,7 @@ export default function Add(): JSX.Element {
                     })}
                     onChange={teamChanged}
                 >
-                    <option value="" disabled>please select job...</option>
+                    <option value="" disabled>please select team...</option>
                     {teams.map(({ id, name }) => <option key={id} value={id}>{name}</option>)}
                 </select>
                 <span className='error'>{formState.errors.teamId?.message}</span>

@@ -31,9 +31,9 @@ export default function List(): JSX.Element {
     return (
         <div className='List'>
             <div className='searchAndFilterContainer'>
-                <div className='jobsSelection'>
+                <div className='teamsSelection'>
                     <select defaultValue="" onChange={teamChanged}>
-                        <option value="" disabled>please select category...</option>
+                        <option value="" disabled>please select team...</option>
                         {teams.map(({ id, name }) => <option key={id} value={id}>{name}</option>)}
                     </select>
                 </div>

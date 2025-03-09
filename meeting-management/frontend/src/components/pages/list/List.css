@@ -13,7 +13,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.List .jobsSelection select {
+.List .teamsSelection select {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
@@ -24,7 +24,7 @@
     transition: border-color 0.3s;
 }
 
-.List .jobsSelection select:focus {
+.List .teamsSelection select:focus {
     outline: none;
     border-color: #5e9dd5;
     box-shadow: 0 0 0 2px rgba(94, 157, 213, 0.2);
