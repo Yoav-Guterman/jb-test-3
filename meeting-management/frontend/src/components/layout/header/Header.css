@@ -1,25 +1,38 @@
 .Header {
-    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+}
+
+.Header div:first-child {
+    font-size: 24px;
+    font-weight: 700;
+    color: #5e9dd5;
 }
 
 .Header nav {
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
+    gap: 20px;
 }
 
-.Header a {
+.Header nav a {
     text-decoration: none;
-    color: black;
-
+    color: #555;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s;
 }
 
+.Header nav a:hover {
+    background-color: #f0f5fa;
+}
 
-.Header .active {
-    padding-bottom: 5px;
-    border-bottom: 2px solid black;
+.Header nav a.active {
+    color: #5e9dd5;
+    font-weight: 600;
+    border-bottom: 2px solid #5e9dd5;
 }

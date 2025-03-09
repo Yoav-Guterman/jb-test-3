@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div className='Header'>
             <div>
-                Logo
+                Yoav Guterman - john bryce - meeting management application
             </div>
 
             <div>
