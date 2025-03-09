@@ -5,6 +5,8 @@ import errorLogger from "./middlewares/error/error-logger"
 import errorResponder from "./middlewares/error/error-responder"
 import notFound from "./middlewares/not-found"
 import cors from 'cors'
+import meetingsRouter from "./routers/meetings"
+import teamsRouter from "./routers/teams"
 
 const port = config.get<string>('app.port')
 const name = config.get<string>('app.name')
@@ -21,6 +23,8 @@ const app = express();
 
     app.use(json()) // a middleware to extract the post data and save it to the request object in case the content type of the request is application/json
 
+    app.use('/meetings', meetingsRouter)
+    app.use('/teams', teamsRouter)
 
     // special notFound middleware
     app.use(notFound)
